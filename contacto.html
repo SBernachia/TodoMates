@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoMates</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f76534a51c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TodoMates</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="titulo">
+            <h1>TodoMates</h1>
+            <div class="pattern"></div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Contacto</h2>
+        <form>
+            <p><b>Nombre: </b><input type="text"></p>
+            <p><b>Apellido: </b><input type="text"></p>
+            <p><b>Email: </b><input type="email"></p>
+            <p><b>Telefono: </b><input type="text"></p>
+            <p><b>Seleccione el producto por el que desea consultar:</b>
+                <select>
+                    <option value="mate">Mate</option>
+                    <option value="bombilla">Bombillas</option>
+                    <option value="termo">Termos</option>
+                    <option value="setCompleto">Set Completo</option>
+                </select>
+            </p>
+           
+            <p><b>Por donde queres que te contactemos:</b></p>
+            <p>Email: <input type="radio" name="metodoContacto"></p>
+            <p>Llamada: <input type="radio" name="metodoContacto"></p>
+            <p>WhatsApp: <input type="radio" name="metodoContacto"></p>
+            <p><b>Mensaje:</b></p>
+            <textarea cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+        <a href="">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <h3>&copy Sebastian Bernachia</h3>
+    </footer>
+</body>
+</html>
