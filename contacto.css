@@ -1,0 +1,81 @@
+main {
+    text-align: center;
+}
+form {
+    width: 60%;
+    background-color: #000b18;
+    border: 3px solid #2c9e3b;
+    border-radius: 25px;
+    color: #d4eee6;
+    margin: 0 auto 60px;
+    padding: 40px 70px;
+}
+p {
+    margin: 50px 0 30px;
+    font-weight: bold;
+}
+p:first-child {
+    margin: 0 0 30px;
+}
+
+
+.datosPersonales {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+}
+.datosPersonales label {
+    align-self: center;
+    text-align: left;
+}
+.datosPersonales input {
+    width: 180px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #2c9e3b;
+    font-size: 18px;
+}
+
+
+select {
+    width: 220px;
+    height: 35px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #2c9e3b;
+}
+
+
+.tipos-contactos {
+    width: 150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-row-gap: 20px;
+}
+.tipos-contactos label {
+    text-align: left;
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    resize: none;
+    font-size: 18px;
+}
+
+
+.btn {
+    margin: 50px auto;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2c9e3b;
+    color: #000b18;
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: #000b18;
+    color: #d4eee6;
+    border: 2px solid #2c9e3b;
+}

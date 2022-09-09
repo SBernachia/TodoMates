@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoMates</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f76534a51c.js" crossorigin="anonymous"></script>
@@ -30,27 +31,40 @@
     <main>
         <h2>Contacto</h2>
         <form>
-            <p><b>Nombre: </b><input type="text"></p>
-            <p><b>Apellido: </b><input type="text"></p>
-            <p><b>Email: </b><input type="email"></p>
-            <p><b>Telefono: </b><input type="text"></p>
-            <p><b>Seleccione el producto por el que desea consultar:</b>
-                <select>
-                    <option value="mate">Mate</option>
-                    <option value="bombilla">Bombillas</option>
-                    <option value="termo">Termos</option>
-                    <option value="setCompleto">Set Completo</option>
-                </select>
-            </p>
-           
-            <p><b>Por donde queres que te contactemos:</b></p>
-            <p>Email: <input type="radio" name="metodoContacto"></p>
-            <p>Llamada: <input type="radio" name="metodoContacto"></p>
-            <p>WhatsApp: <input type="radio" name="metodoContacto"></p>
-            <p><b>Mensaje:</b></p>
-            <textarea cols="30" rows="10"></textarea>
+            <p>Datos Personales:</p>
+            <div class="datosPersonales">
+                <label>Nombre:</label>
+                <input maxlength="20" type="text">
+                <label>Apellido:</label>
+                <input maxlength="20" type="text">
+                <label>Email:</label>
+                <input maxlength="20" type="email">
+                <label>Telefono:</label>
+                <input maxlength="20" type="tel">
+            </div>
+            
+            <p>Seleccione el producto por el que desea consultar:</p>
+            <select>
+                <option value="mate">Mate</option>
+                <option value="bombilla">Bombillas</option>
+                <option value="termo">Termos</option>
+                <option value="setCompleto">Set Completo</option>
+            </select>
+            
+            <p>Por donde queres que te contactemos:</p>
+            <div class="tipos-contactos">
+                <label class="tipos-contactos">Email:</label>
+                <input type="radio" name="metodoContacto">
+                <label class="tipos-contactos">Llamada:</label>
+                <input type="radio" name="metodoContacto">
+                <label class="tipos-contactos">WhatsApp:</label>
+                <input type="radio" name="metodoContacto">
+            </div>
+            
+            <p>Mensaje:</p>
+            <textarea maxlength="250" placeholder="Escriba su mensaje aqui"></textarea>
             <br>
-            <input type="submit" value="Enviar">
+            <input class="btn" type="submit" value="Enviar">
         </form>
     </main>
 
